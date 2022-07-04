@@ -1,0 +1,19 @@
+trigger:
+- '!main'
+
+pr:
+- '!main'
+
+schedules:
+- cron: "0 1 * * *"
+  displayName: Daily 9:00 Run
+  branches:
+    include:
+    - main
+
+pool:
+  name: cboss-vnet-dev
+
+steps:
+- script: mvn test -B -e
+  displayName: Maven Test
