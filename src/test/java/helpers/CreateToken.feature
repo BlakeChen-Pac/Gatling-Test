@@ -1,6 +1,6 @@
 Feature: Create Token
 
   Scenario: Create Token
-    Given url 'http://app-ntsa-webjob-dev.chinacloudsites.cn'
+    Given url ''
     When method GET
     * def accessToken = response
