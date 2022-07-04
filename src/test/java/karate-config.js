@@ -28,11 +28,11 @@ function fn() {
 
     }
 
-    var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature',config).accessToken
-    karate.configure('headers', {
-        Authorization: 'Bearer ' + accessToken,
-        'Ocp-Apim-Subscription-Key': '3c5fa49ca29944199343fb89813d4462'
-    })
+//    var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature',config).accessToken
+//    karate.configure('headers', {
+//        Authorization: 'Bearer ' + accessToken,
+//        'Ocp-Apim-Subscription-Key': '3c5fa49ca29944199343fb89813d4462'
+//    })
     karate.configure('connectTimeout', 5000);
     karate.configure('readTimeout', 5000);
 
